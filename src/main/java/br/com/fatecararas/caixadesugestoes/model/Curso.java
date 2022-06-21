@@ -1,10 +1,15 @@
 package br.com.fatecararas.caixadesugestoes.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Curso {
@@ -15,9 +20,12 @@ public class Curso {
 
     @Column(nullable = false, length = 50)
     private String nome;
+
+    // private List<Disciplina> disciplinas = new ArrayList<>();
     
     public Curso() {
     }
+
     public Curso(String nome) {
         this.nome = nome;
     }
@@ -33,8 +41,18 @@ public class Curso {
     public void setNome(String nome) {
         this.nome = nome;
     }
-    @Override
-    public String toString() {
-        return "Curso [id=" + id + ", nome=" + nome + "]";
-    }
+
+    // public List<Disciplina> getDisciplinas() {
+    //     return disciplinas;
+    // }
+
+    // public void setDisciplinas(List<Disciplina> disciplinas) {
+    //     this.disciplinas = disciplinas;
+    // }
+    // @Override
+    // public String toString() {
+    //     return "Curso [disciplinas=" + disciplinas + ", id=" + id + ", nome=" + nome + "]";
+    // }
+
+    
 }
