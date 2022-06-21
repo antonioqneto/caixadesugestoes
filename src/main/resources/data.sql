@@ -6,9 +6,9 @@ insert into tipo_sugestao (descricao) values
 
 insert into curso (nome)
 values
-('SIS INT'),
-('DEV MUL'),
-('ADM');
+('Sistemas para Internet'),
+('Desenvolvimento Multiplataforma'),
+('Administração');
 
 insert into sugestao (autor, conteudo, data, id_curso, id_tiposugestao)
 values
