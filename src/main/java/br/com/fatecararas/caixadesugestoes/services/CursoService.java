@@ -29,4 +29,8 @@ public class CursoService {
         repository.saveAll(cursos);
     }
 
+    public void remover(Integer id) {
+        repository.deleteById(id);
+    }
+
 }
