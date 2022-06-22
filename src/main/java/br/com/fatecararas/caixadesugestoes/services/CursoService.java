@@ -21,8 +21,8 @@ public class CursoService {
         return cursos;
     }
 
-    public void salvar(Curso curso) {
-        repository.save(curso);
+    public Curso salvar(Curso curso) {
+        return repository.save(curso);
     }    
 
     public void salvarTodos(Iterable<Curso> cursos) {
