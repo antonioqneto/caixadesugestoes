@@ -15,7 +15,6 @@ import br.com.fatecararas.caixadesugestoes.services.SugestaoService;
 @Controller
 public class IndexController {
 
-    // TODO: Usar autowired do Servive
     @Autowired
     private SugestaoService service;
 

@@ -13,7 +13,7 @@ public class CaixadesugestoesApplication implements CommandLineRunner{
 
 	@Override
 	public void run(String... args) throws Exception {
-		//TODO: Utilizar como auxilio em testes...
+
 	}
 
 }
